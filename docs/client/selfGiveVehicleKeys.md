@@ -22,7 +22,7 @@ AddEventHandler('esx:spawnVehicle', function(vehicleName)
 			TaskWarpPedIntoVehicle(playerPed, vehicle, -1)
 
 			-- VEHICLES KEYS INTEGRATION
-			TriggerServerEvent("vehicles_keys:selfGiveVehicleKeys", GetVehicleNumberPlateText(vehicle))**
+			TriggerServerEvent("vehicles_keys:selfGiveVehicleKeys", GetVehicleNumberPlateText(vehicle))
 		end)
 	else
 		TriggerEvent('chat:addMessage', {args = {'^1SYSTEM', 'Invalid vehicle model.'}})

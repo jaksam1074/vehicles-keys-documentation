@@ -18,6 +18,6 @@ To add the new items, you have to edit `qb-core/shared/items.lua` file and add a
 ## Installing ESX menu
 To make the script works, you need to install ESX menu
 
-This esx_menu_default script is edited by the creator of QB-Core framework, you can find it in QBCore Discord server in conversion channel, or directly from this [link](https://cdn.discordapp.com/attachments/837369580921552936/915519378852810762/esx_menu_default.rar)
+This esx_menu_default script is edited by the creator of QB-Core framework, you can find it in QBCore Discord server in conversion channel, or directly from this [link](https://cdn.discordapp.com/attachments/895599870268817418/978621080061222912/esx_menu_default.rar)
 
 <!-- Be sure to add it in server.cfg auto start -->

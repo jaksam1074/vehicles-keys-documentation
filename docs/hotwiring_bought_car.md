@@ -115,3 +115,35 @@ end)
 ![s4-vehicleshop after](images_dealership_scripts/s4-vehicleshop_after.png)
 
 **Note:** this code will work for both _oxmysql_ and _ghmattimysql_ versions
+
+## t1ger_dealerships
+
+### First step
+
+Go to `t1ger_dealerships/server/main.lua` and add the following line below **all codes** (more than one) like as shown in the example
+
+```lua
+exports['t1ger_keys']:UpdateKeysToDatabase(props.plate, true)
+```
+
+![t1ger_dealerships after](images_dealership_scripts/t1ger_dealerships_before.png)
+
+And add the following line
+```lua
+exports["vehicles_keys"]:refreshPlayerOwnedVehicles(xPlayer.source)
+```
+
+![t1ger_dealerships after](images_dealership_scripts/t1ger_dealerships_after.png)
+
+### Second step
+
+Go to `t1ger_dealerships/server/main.lua` (same file as before) and search for the following code:
+
+![t1ger_dealerships 2 before](images_dealership_scripts/t1ger_dealerships2_before.png)
+
+And add the following line
+```lua
+exports["vehicles_keys"]:refreshPlayerOwnedVehicles(xPlayer.source)
+```
+
+![t1ger_dealerships 2 after](images_dealership_scripts/t1ger_dealerships2_after.png)

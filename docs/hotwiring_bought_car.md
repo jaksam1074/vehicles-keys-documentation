@@ -98,3 +98,20 @@ exports["vehicles_keys"]:refreshPlayerOwnedVehicles(_source)
 ```
 
 ![okokVehicleShop before](images_dealership_scripts/okokVehicleShop_after.png)
+
+## s4-vehicleshop
+
+Go to `s4-vehicleshop/server.lua` and search for the following code:
+
+![s4-vehicleshop before](images_dealership_scripts/s4-vehicleshop_before.png)
+
+And add the following code:
+```lua
+SetTimeout(1000, function() 
+    exports["vehicles_keys"]:refreshPlayerOwnedVehicles(src)
+end)
+```
+
+![s4-vehicleshop after](images_dealership_scripts/s4-vehicleshop_after.png)
+
+**Note:** this code will work for both _oxmysql_ and _ghmattimysql_ versions

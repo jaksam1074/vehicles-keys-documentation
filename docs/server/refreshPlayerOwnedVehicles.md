@@ -4,7 +4,7 @@ Using this export (from server side) will refresh the list of the player's owned
 
 ## Event
 ```lua
-exports["vehicles_keys"]:refreshPlayerOwnedVehicles(playerId)
+exports["vehicles_keys"]:refreshPlayerOwnedVehicles(playerId, instantly)
 ```
 
 ## Parameters
@@ -12,7 +12,8 @@ exports["vehicles_keys"]:refreshPlayerOwnedVehicles(playerId)
 
 | Name              | Data Type | Description                 |
 | -                 | -         | -                 |
-| `playerId`         | integer    | The player server ID |"other_player" |
+| `playerId`         | integer    | The player server ID |
+| `instantly`         | boolean    | OPTIONAL - By default, it will wait 2 seconds before actually refreshing, if you know for sure that you need it instantly, pass `true` as second parameter, otherwise can be empty 
 
 ## Example
 ```lua
